@@ -24,15 +24,11 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-3">
-                <div class="row">Search for a City:</div>
-                <div class="row">
-                    <div class="col-8">
-                        <input class="form-control" id="citysearch">
-                    </div>
-                    <div class="col-auto">
+            <div class="col-auto" id="aside">
+                <div>Search for a City:</div>
+                <div class="input-group">
+                        <input type="search" class="form-control" id="citysearch">
                         <button type="text" class="btn btn-primary" id="search"><i class="fas fa-search"></i></button>
-                    </div>
                 </div>
             </div>
             <div class="col-md-9">
@@ -40,18 +36,21 @@
                     <div class="card">
                         <div class="card-body">
                             <h2 class="card-title" id="day1"></h2>
+                            <span><img class="card-text text-light" id="emoji1"></span>
                             <p class="card-text" id="temp1"></p>
                             <p class="card-text" id="humid1"></p>
                             <p class="card-text" id="wind"></p>
-                            <p class="card-text" id="uv"></p>
+                            <p class="card-text visually-hidden" id="uv">UV Index:<span class="badge" id="uvNum"></span></p>
+                            
+                            
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <h2>5-day Forecast:</h2>
+                    <h2 class="visually-hidden">5-day Forecast:</h2>
                 </div>
                 <div class="row">
-                    <div class="card col-auto bg-primary">
+                    <div class="card col-auto bg-primary visually-hidden">
                         <div class="card-body">
                             <h4 class="card-title text-light" id="day2"></h4>
                             <img class="card-text text-light" id="emoji2">
@@ -59,7 +58,7 @@
                             <p class="card-text text-light" id="humid2"></p>
                         </div>
                     </div>
-                    <div class="card col-auto bg-primary">
+                    <div class="card col-auto bg-primary visually-hidden">
                         <div class="card-body">
                             <h4 class="card-title text-light" id="day3"></h4>
                             <img class="card-text text-light" id="emoji3">
@@ -67,7 +66,7 @@
                             <p class="card-text text-light" id="humid3"></p>
                         </div>
                     </div>
-                    <div class="card col-auto bg-primary">
+                    <div class="card col-auto bg-primary visually-hidden">
                         <div class="card-body">
                             <h4 class="card-title text-light" id="day4"></h4>
                             <img class="card-text text-light" id="emoji4">
@@ -75,7 +74,7 @@
                             <p class="card-text text-light" id="humid4"></p>
                         </div>
                     </div>
-                    <div class="card col-auto bg-primary">
+                    <div class="card col-auto bg-primary visually-hidden">
                         <div class="card-body">
                             <h4 class="card-title text-light" id="day5"></h4>
                             <img class="card-text text-light" id="emoji5">
@@ -83,7 +82,7 @@
                             <p class="card-text text-light" id="humid5"></p>
                         </div>
                     </div>
-                    <div class="card col-auto bg-primary">
+                    <div class="card col-auto bg-primary visually-hidden">
                         <div class="card-body">
                             <h4 class="card-title text-light" id="day6"></h4>
                             <img class="card-text text-light" id="emoji6">
